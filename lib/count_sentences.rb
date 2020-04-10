@@ -17,7 +17,7 @@ class String
   def count_sentences
     sum = 0
     self.split(".").each do |maybe_sentence|
-      binding.pry
+
       if maybe_sentence.length == 0
         continue
       end
@@ -26,6 +26,7 @@ class String
           continue
         end
         maybe_sentence2.split("!").each do |maybe_sentence3|
+          binding.pry
           if maybe_sentence3.length > 0
             sum += 1
           end
