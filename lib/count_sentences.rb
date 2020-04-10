@@ -17,6 +17,7 @@ class String
   def count_sentences
     sum = 0
     self.split(".").each do |maybe_sentence|
+      binding.pry
       if maybe_sentence.length == 0
         continue
       end
